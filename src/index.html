@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap 4 Starter Pack</title>
+</head>
+
+<body>
+  <h1 class="text-center mt-4 animated bounceInLeft">GIPHY-Lite</h1>
+  <div class="container">
+    <div class="row">
+      <form id="searchParams" class="mx-auto animated bounceInRight">
+        <div class="form-row align-items-center my-3">
+          <div class="col-auto my-1">
+            <label class="sr-only" for="searchInput">Search</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Search for gifs">
+          </div>
+          <div class="my-1">
+            <button id="searchBtn" type="submit" class="btn btn-dark">Submit</button>
+          </div>
+        </div>
+      </form>
+      <img id="loadingImage" class="w-100 h-100" src="img/loading.gif" alt="Loading...">
+      <div id="output" class="card-columns container">
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+  <div class="card mx-auto border-0 animated fadeIn" style="width: 200px;">
+    <img src="https://media0.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif" class="img-fluid card-img pic" id="3oKIPnwkbi6BDDG3a8"
+      data-clipboard-text="https://media0.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif">
+  </div> -->
+
+  <!-- hover test -->
+  <!-- <div class="image-hover-text-container">
+    <div class="image-hover-image">
+      <img src="https://media0.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif" class="img-fluid card-img pic" id="3oKIPnwkbi6BDDG3a8"
+        data-clipboard-text="https://media0.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif"> </div>
+    <div class="image-hover-text">
+      <div class="image-hover-text-bubble">
+        Click to Copy
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="js/app4.js"></script>
+</body>
+
+</html>
