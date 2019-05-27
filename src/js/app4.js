@@ -11,8 +11,10 @@ searchParams.addEventListener('submit', e => {
   e.preventDefault();
 
   if (searchInput.value === '') {
-    console.log('nope');
+    output.innerHTML = `<div class="text-center">Please enter a search term</div>`;
+    
   } else {
+    output.className += " card-columns";
     loadingImage.style.display = '';
     output.style.display = 'none';
     getData();
